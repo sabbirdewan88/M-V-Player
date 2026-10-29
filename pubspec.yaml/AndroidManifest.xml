@@ -1,0 +1,46 @@
+name: mv_player
+description: "M&V Player - Universal Local-First Audio & Video Player with AI Studio & SafeSearch"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Universal Media Playback Engine (FFmpeg / libmpv powered - plays all formats)
+  media_kit: ^1.1.11
+  media_kit_video: ^1.2.5
+  media_kit_libs_video: ^1.0.5
+  just_audio: ^0.9.40
+  audio_service: ^0.18.15
+
+  # AI Audio Processing & Lossless Video/Audio Trimming
+  ffmpeg_kit_flutter_full_gpl: ^6.0.3
+
+  # Local-First Embedded Database & Storage
+  sqflite: ^2.3.3+1
+  path_provider: ^2.1.4
+  path: ^1.9.0
+  shared_preferences: ^2.3.2
+
+  # Device Hardware, Gestures, PiP & Permissions
+  permission_handler: ^11.3.1
+  screen_brightness: ^1.0.1
+  volume_controller: ^2.0.8
+  floating: ^3.0.0
+  file_picker: ^8.1.2
+
+  # Networking, Downloader & Security
+  dio: ^5.7.0
+  package_info_plus: ^8.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
